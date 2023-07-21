@@ -3,6 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello MF</title>
+    {%if blogs%} 
+    {%for blog in blogs%}
+    <h2>{{blog.title}}</h2>
+    <h3>{{blog.title}}</h3>
+    {%endfor%} 
+    {%endif%}
   </head>
   <body>
     Hello its me!!
